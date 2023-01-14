@@ -15,21 +15,6 @@
     gap: 93px;
   }
 }
-
-.logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1;
-  text-decoration: none;
-  color: $hover-text-color;
-  letter-spacing: 0.03em;
-
-  &__logo-part {
-    color: $logo-color;
-  }
-}
-
 .wrapper {
   padding: 24px 0 25px;
 }
@@ -85,7 +70,7 @@
   letter-spacing: 0.02em;
   display: block;
   padding: 32px 0;
-  color: var(--color-text-secondary);
+  color: $color-text-secondary;
   text-decoration: none;
   gap: 10px;
 
