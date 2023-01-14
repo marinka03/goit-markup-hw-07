@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--additional-background-color);
+  background-color: $additional-background-color;
   padding: 60px 0 60px;
 
   &__conteiner {
@@ -22,7 +22,7 @@
   line-height: 1.19;
 
   &__logo-part-footer {
-    color: var(--additional-color);
+    color: $additional-color;
   }
 }
 .address__item {
@@ -38,7 +38,7 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
-  color: var(--additional-color);
+  color: $additional-color;
   text-decoration: none;
 
   transition: color 250ms var(--timing-function);
@@ -53,7 +53,7 @@
 
   &:hover,
   &:focus {
-    color: var(--hover-text-color);
+    color: $hover-text-color;
   }
 }
 .address__link-mail {
@@ -68,7 +68,7 @@
 
   &:hover,
   &:focus {
-    color: var(--hover-text-color);
+    color: $hover-text-color;
   }
 }
 .address__link-tel {
@@ -83,7 +83,7 @@
 
   &:hover,
   &:focus {
-    color: var(--hover-text-color);
+    color: $hover-text-color;
   }
 }
 .footer-contact {
@@ -97,7 +97,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: var(--additional-color);
+    color: $additional-color;
   }
 
   &__social-list {
@@ -105,9 +105,7 @@
   }
 }
 .combined-sections {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %centeredFlex;
   gap: 93px;
 }
 .social-list__footer-item {
@@ -117,12 +115,12 @@
 }
 .footer-contact__social-link {
   background-color: rgba(255, 255, 255, 0.1);
-  fill: var(--additional-color);
+  fill: $additional-color;
   text-decoration: none;
   transition: background-color 250ms var(----timing-function);
 
   &:hover,
   &:focus {
-    background-color: var(--button-hover-background);
+    background-color: button-hover-background;
   }
 }
