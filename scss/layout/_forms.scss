@@ -1,0 +1,66 @@
+/*Footer-form*/
+.footer-form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  &__text {
+    margin: 0;
+  }
+}
+.footer__footer-form {
+  gap: 12px;
+}
+.user-data {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  &__label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--additional-color);
+  }
+}
+.footer-form__user-data {
+  gap: 20px;
+}
+
+.user-data__input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 16px;
+  color: var(--additional-color);
+  background-color: var(--additional-background-color);
+  transition: border-color 250ms var(--timing-function);
+  outline: none;
+
+  &:focus {
+    border-color: var(--main-button-hover);
+  }
+}
+
+.footer-form__btn {
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
+  background-color: var(--button-hover-background);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--additional-color-button);
+  fill: var(--additional-color-button);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  &:hover {
+    background-color: var(--main-button-hover);
+  }
+}

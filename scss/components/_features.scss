@@ -1,0 +1,48 @@
+/*2 section*/
+.visually-hidden {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.features {
+  padding: 94px 0 94px;
+
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+.feature-card {
+  &__icon {
+    width: 270px;
+    height: 120px;
+    background: var(--fourth-section-background);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__subtitle {
+    width: 270px;
+    height: 16px;
+    margin: 0 0 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  &__text {
+    width: 270px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-text-secondary);
+  }
+}

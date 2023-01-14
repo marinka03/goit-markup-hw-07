@@ -1,66 +1,67 @@
+/*Header*/
 .header {
-    border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 50px;
-      }
-      
-    &__nav {
-        display: flex;
-        align-items: center;
-        gap: 93px;
-      }
-  }
-  
-  .logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.1;
-    text-decoration: none;
-    color: var(--hover-text-color);
-    letter-spacing: 0.03em;
-    padding: 24px 0 25px;
-
-    &__logo-part {
-        color: var(--logo-color);
-      }
-  }
-  
-  .menu {
+  &__container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 50px;
-    padding: 0;
-    margin: 0;
+  }
 
-    &__link {
-        position: relative;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-        color: var(--color-text-primary);
-        display: block;
-        padding: 32px 0;
-      
-        transition: color 250ms var(--timing-function);
-      }
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 93px;
   }
-  
-  .menu__link:hover,
-  .menu__link:focus {
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1;
+  text-decoration: none;
+  color: var(--hover-text-color);
+  letter-spacing: 0.03em;
+
+  &__logo-part {
+    color: var(--logo-color);
+  }
+}
+
+.wrapper {
+  padding: 24px 0 25px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+}
+.menu__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--color-text-primary);
+  display: block;
+  padding: 32px 0;
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
     color: var(--hover-text-color);
   }
-  .menu__link--current {
+
+  &--current {
     color: var(--hover-text-color);
-    
   }
-  .menu__link--current::after {
+
+  &--current::after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -68,34 +69,35 @@
     height: 4px;
     border-radius: 2px;
     background-color: var(--hover-text-color);
-    content: ''; 
+    content: "";
   }
-  .list-contact {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    padding: 0;
-    &__link {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
-        display: block;
-        padding: 32px 0;
-        color: var(--color-text-secondary);
-        text-decoration: none;
-      
-        display: flex;
-        gap: 10px;
-        align-items: center;
-        justify-content: center;
-        fill: var(--color-text-secondary);
-      
-        transition: color 250ms var(--timing-function), fill 250ms var(--timing-function);
-      }
-  }
-  .list-contact__link:hover,
-  .list-contact__link:focus {
+}
+.list-contact {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 0;
+}
+.list-contact__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  display: block;
+  padding: 32px 0;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  fill: var(--color-text-secondary);
+  transition: color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
     fill: var(--hover-text-color);
     color: var(--hover-text-color);
   }
+}
