@@ -1,5 +1,5 @@
 .visually-hidden {
-  @extend %visually-hidden;
+  @include visually-hidden;
   }
   .container {
     width: 1200px;
